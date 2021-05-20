@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/messageback"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listview_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        tools:ignore="InefficientWeight" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/add_query"
+            android:layout_width="250dp"
+            android:layout_height="68dp"
+            android:layout_gravity="bottom"
+            android:hint="Type a query..."
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <Button
+            android:id="@+id/button_mic"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/microphone"
+            android:layout_marginRight="4dp"
+            android:background="@android:drawable/ic_btn_speak_now"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/send"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+    </LinearLayout>
+</LinearLayout>
